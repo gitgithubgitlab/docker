@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Test Execution Report</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .content-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .left-aligned {
+            text-align: left;
+            width: 48%; /* Adjust width based on your layout */
+        }
+
+        .right-aligned {
+            text-align: left;
+            width: 35%; /* Adjust width based on your layout */
+        }
+
+        .test-case {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        img {
+            color: blue;
+        }
+
+        .test-passed, .status-passed {
+            color: green;
+        }
+
+        .test-failed, .status-failed {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<h1>Test Execution Report</h1>
+<h2>Test Details</h2>
+<div class="content-container">
+<div class="left-aligned">
+<p id="sn">Suite Name: pythondoc</p>
+<p id="ed">Execution Date: 2024-01-13</p>
+<p id="st">Start Time: 2024-01-13 17:54:50</p>
+<p id="et">End Time: 2024-01-13 17:56:14</p>
+<p id="ttt">Total Time Taken: 0:01:24</p>
+</div>
+<div class="right-aligned">
+<p id="eid">Executor ID: Hi</p>
+<p id="ttc">Total Testcases Run: 3</p>
+<p id="tp" style="color: green;">Total Passed: 1</p>
+<p id="tf" style="color: red;">Total Failed: 2</p>
+<p id="env">Environment: Production</p>
+</div>
+</div>
+<h2>Test Summary</h2>
+<div class="test-case" id="2"><h3>Test Case: TC01_swaglabs_orderlaptopbag_MTC01,MTC02</h3><p>Test Steps:</p><ol id="o2"><li class="test-passed">Login page with title --&gt; [Swag Labs] to load successfully.  
+Expected Data = [Login page to be loaded],  
+Actual Data = [Login page loaded]</li><li class="test-passed">Products page to be loaded and products header to be displayed.  
+Expected Data = [true],  
+Actual Data = [True]</li><li class="test-passed">Products page to be loaded and product [Sauce Labs Backpack] to be displayed.  
+Expected Data = [true],  
+Actual Data = [True]</li><li class="test-passed">Checkout Page to be loaded.  
+Expected Data = [true],  
+Actual Data = [True]</li><li class="test-passed">Product to be displayed --&gt; [Sauce Labs Backpack].  
+Expected Data = [true],  
+Actual Data = [True]</li><li class="test-passed">Information Page to be loaded.  
+Expected Data = [true],  
+Actual Data = [True]</li><li class="test-passed">Overview Page to be loaded.  
+Expected Data = [true],  
+Actual Data = [True]</li><li class="test-passed">Validating card details.  
+Expected Data = [#31337],  
+Actual Data = [SauceCard #31337]</li><li class="test-failed">Validating cart total.  
+Expected Data = [30.39],  
+Actual Data = [Total: $32.39]</li><a href="../Results/screenshots/screenshot-20240113175521.png" target="_blank">screenshot</a><li class="test-passed">Order Complete page to be loaded.  
+Expected Data = [true],  
+Actual Data = [True]</li><li class="test-passed">Order Completion check.  
+Expected Data = [Order to be placed successfully],  
+Actual Data = [Order placed successfully]</li></ol><span class="status-failed">Status: Failed</span></div><div class="test-case" id="3"><h3>Test Case: TC02_swaglabs_orderbikelight_MTC03</h3><p>Test Steps:</p><ol id="o3"><li class="test-passed">Login page with title --&gt; [Swag Labs] to load successfully.  
+Expected Data = [Login page to be loaded],  
+Actual Data = [Login page loaded]</li><li class="test-passed">Products page to be loaded and products header to be displayed.  
+Expected Data = [true],  
+Actual Data = [True]</li><li class="test-passed">Products page to be loaded and product [Sauce Labs Bike Light] to be displayed.  
+Expected Data = [true],  
+Actual Data = [True]</li><li class="test-passed">Checkout Page to be loaded.  
+Expected Data = [true],  
+Actual Data = [True]</li><li class="test-passed">Product to be displayed --&gt; [Sauce Labs Bike Light].  
+Expected Data = [true],  
+Actual Data = [True]</li><li class="test-passed">Information Page to be loaded.  
+Expected Data = [true],  
+Actual Data = [True]</li><li class="test-passed">Overview Page to be loaded.  
+Expected Data = [true],  
+Actual Data = [True]</li><li class="test-passed">Validating card details.  
+Expected Data = [#31337],  
+Actual Data = [SauceCard #31337]</li><li class="test-passed">Validating cart total.  
+Expected Data = [10.79],  
+Actual Data = [Total: $10.79]</li><li class="test-passed">Order Complete page to be loaded.  
+Expected Data = [true],  
+Actual Data = [True]</li><li class="test-passed">Order Completion check.  
+Expected Data = [Order to be placed successfully],  
+Actual Data = [Order placed successfully]</li></ol><span class="status-passed">Status: Passed</span></div><div class="test-case" id="4"><h3>Test Case: TC03_swaglabs_orderordertshirt_MTC04,MTC05</h3><p>Test Steps:</p><ol id="o4"><li class="test-passed">Login page with title --&gt; [Swag Labs] to load successfully.  
+Expected Data = [Login page to be loaded],  
+Actual Data = [Login page loaded]</li><li class="test-failed">Perform action on web element.  
+Expected Data = [Element //div[@id='header_container']//span[text()='Products'] action with value isdisplayed],  
+Actual Data = [Element action failed]</li><a href="../Results/screenshots/screenshot-20240113175613.png" target="_blank">screenshot</a></ol><span class="status-failed">Status: Failed</span></div></body>
+</html>

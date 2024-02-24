@@ -1,0 +1,60 @@
+version: "3.9"
+
+services:
+  vote:
+    image: dockersamples/examplevotingapp_vote
+    ports:
+      - 5000:80
+    networks:
+      - frontend
+    deploy:
+      replicas: 2
+
+  
+  redis:
+    image: redis:alpine
+    deploy:
+      replicas: 2
+    networks:
+      - frontend
+
+
+  worker:
+    image: dockersamples/examplevotingapp_worker
+    networks:
+      - frontend
+      - backend
+
+
+  db:
+    image: postgres:15-alpine
+    networks:
+      - backend
+    secrets:
+      - db_password
+    environment:
+      - POSTGRES_PASSWORD: db_password   
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+
+  result:
+    image: dockersamples/examplevotingapp_result
+    deploy:
+      replicas: 2
+    ports:
+      - 5001:80
+    networks:
+      - backend      
+
+
+secrets:
+  db_password:
+    file: ./test.txt
+
+volumes:
+  db-data:
+
+networks:
+  frontend:
+  backend:
